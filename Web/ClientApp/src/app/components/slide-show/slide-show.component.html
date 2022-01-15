@@ -1,0 +1,30 @@
+<div class="container" #container (mousemove)="onContainerMouseMove()" (click)="onContainerClick()"
+     swipe (swipeLeft)="onSwipeLeft()" (swipeRight)="onSwipeRight()">
+  <div class="image-wrapper image-back">
+    <img class="image" [attr.src]="imageBackUrl" *ngIf="imageBackUrl" />
+  </div>
+  <div class="image-wrapper image-front" [class.image-loading]="isImageLoading">
+    <img class="image" [attr.src]="imageUrl" (load)="onImageLoad()" *ngIf="imageUrl" />
+  </div>
+  <div class="control info" [class.hidden]="isControlsHidden" *ngIf="data">
+    {{imageIndex + 1}} / {{data.length}}
+  </div>
+  <button type="button" class="control round-button button-prev" [class.hidden]="isControlsHidden" (click)="onPrevButtonClick($event)">
+    <span class="oi" data-glyph="chevron-left"></span>
+  </button>
+  <button type="button" class="control round-button button-next" [class.hidden]="isControlsHidden" (click)="onNextButtonClick($event)">
+    <span class="oi" data-glyph="chevron-right"></span>
+  </button>
+  <button type="button" class="control round-button button-start" [class.hidden]="isControlsHidden" (click)="onStartButtonClick($event)" *ngIf="!isTimerActive()">
+    <span class="oi" data-glyph="media-play"></span>
+  </button>
+  <button type="button" class="control round-button button-stop" [class.hidden]="isControlsHidden" (click)="onStopButtonClick($event)" *ngIf="isTimerActive()">
+    <span class="oi" data-glyph="media-pause"></span>
+  </button>
+  <button type="button" class="control round-button button-fullscreen" [class.hidden]="isControlsHidden" (click)="onEnterFullScreenButtonClick($event)" *ngIf="!isFullscreen">
+    <span class="oi" data-glyph="fullscreen-enter"></span>
+  </button>
+  <button type="button" class="control round-button button-fullscreen" [class.hidden]="isControlsHidden" (click)="onExitFullScreenButtonClick($event)" *ngIf="isFullscreen">
+    <span class="oi" data-glyph="fullscreen-exit"></span>
+  </button>
+</div>

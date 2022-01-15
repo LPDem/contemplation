@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contemplation", "Web\Contemplation.csproj", "{6EAB1784-CCA3-4148-8D4E-006E0D951178}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{5E6EA823-70F0-4DD5-93BD-187C20E3FC7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EAB1784-CCA3-4148-8D4E-006E0D951178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EAB1784-CCA3-4148-8D4E-006E0D951178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EAB1784-CCA3-4148-8D4E-006E0D951178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EAB1784-CCA3-4148-8D4E-006E0D951178}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E6EA823-70F0-4DD5-93BD-187C20E3FC7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6EA823-70F0-4DD5-93BD-187C20E3FC7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6EA823-70F0-4DD5-93BD-187C20E3FC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6EA823-70F0-4DD5-93BD-187C20E3FC7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A13B03A8-30A7-49D7-97FD-88FF6D6B0D61}
+	EndGlobalSection
+EndGlobal

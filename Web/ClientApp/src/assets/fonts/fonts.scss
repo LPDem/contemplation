@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Mulish";
+  src: url("/assets/fonts/mulish/Mulish.ttf") format("truetype");
+  font-weight: 200 999;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("/assets/fonts/mulish/Mulish-Italic.ttf") format("truetype");
+  font-weight: 200 999;
+  font-style: italic;
+}
+
+@import 'open-iconic/open-iconic.scss';

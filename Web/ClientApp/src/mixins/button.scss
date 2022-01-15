@@ -1,0 +1,15 @@
+@mixin button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border-color: var(--button-border-color);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--button-background-hover-color);
+    color: var(--button-text-hover-color);
+    border-color: var(--button-border-hover-color);
+  }
+}
