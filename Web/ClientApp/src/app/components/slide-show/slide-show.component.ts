@@ -40,7 +40,7 @@ export class SlideShowComponent implements OnInit, AfterViewInit {
       .pipe(
         tap(result => {
           this.data = result;
-          //this.startChangeImageTimer();
+          this.startChangeImageTimer();
         })
       );
 
