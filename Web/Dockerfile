@@ -15,5 +15,6 @@ RUN chown webuser:webuser $(pwd)
 COPY --chown=webuser --from=build /Release/ .
 EXPOSE 80
 ENV ASPNETCORE_URLS="http://*:80"
+ENV ImagesFolder="/images"
 USER webuser
 ENTRYPOINT ["dotnet", "Contemplation.dll"]
